@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Literata', Arial, Helvetica, sans-serif; 
+}
+body{
+    background: rgb(100, 104, 104);
+}
+start.hide{
+    display: none;
+}
+#start h1{
+    margin: auto;
+}
+#start-btn{
+    width: 25%;
+    margin: auto;
+}
