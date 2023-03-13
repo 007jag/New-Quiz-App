@@ -12,8 +12,27 @@ start.hide{
 }
 #start h1{
     margin: auto;
+    color: rgb(7, 51, 182);
 }
 #start-btn{
-    width: 25%;
+    width: 40%;
     margin: auto;
+    color: rgb(5, 30, 218);
+    background-color: black;
+    border-color: aliceblue;
+    
+}
+
+.info-title{
+    color: black;
+    font-size: 25px;
+}
+
+.info-list{
+    color: rgb(249, 248, 248);
+}
+
+.col-2{
+    font-size: 25px;
+    color: rgb(255, 0, 255);
 }
