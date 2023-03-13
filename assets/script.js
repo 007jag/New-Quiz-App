@@ -91,3 +91,12 @@ function nextQuestion(){
     const response = document.querySelector("#response");
     response.innerHTML = '<div id="response"><span></span></div>';
     }
+
+    //quiz will end after all questions have been answered or if the timer runs out 
+function quizEnd(){
+    quizBox.classList.add("hide");
+    endBox.classList.remove("hide");
+    const scoreText = document.querySelector(".score");
+    let scoreTag = '<h3 class="score"> Your score was '+ score +' out of 10!</h3>';
+    scoreText.innerHTML = scoreTag 
+}
