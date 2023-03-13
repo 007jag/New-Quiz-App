@@ -17,26 +17,26 @@
     <div class="title">Coding Quiz Game<a href="highscores.html" class="highscores float-end">View Highscores</a></div>
 </header>
 <main class="container position-relative">
-    <div id="start" class="hide text-center p-5">
-        <h1>Coding Quiz Game</h1>
+    <div id="start" class="hide text-center">
+        <h1>JavaScript Quiz Game</h1>
         <button type="button" class="buttons mt-5" id="start-btn">Start!</button> 
     </div>
-    <div id="rules" class="hide info-box" style="width: auto" >
-        <div class="info-title">Coding Quiz Rules</div>
+    <div id="rules" class="info-box mt-5" style="width: auto" >
+        <div class="info-title">Quiz Rules</div>
         <div class="info-list">
-            <div class="info">1. You only have <span>60 seconds</span> to finish 10 questions.</div>
-            <div class="info">2. You cannot go back to a previous question.</div>
-            <div class="info">3. If you answer a question incorrectly, you are penalized 5 seconds.</div>
+            <div class="info">1. You will only be given <span id="sixety">60s</span> to answer 10 questions.</div>
+            <div class="info">2. You cant go back to prev questions</div>
+            <div class="info">3. Everytime you get a wrong answer 5 secounds will be deducted from the time.</div>
         </div>
         <div class="buttons">
             <button class="quit btn btn-primary btn-sm">Exit Quiz</button>
             <button class="restart btn btn-primary btn-sm">Continue</button>
         </div>
     </div>
-    <div id="questions" class="row info-box mt-5" style="width: auto">
+    <div id="questions" class="hide row info-box mt-5" style="width: auto">
         <span id="timeRem">Time Left:</span>
         <h1 class="question">
-            Question # <span id=questionNo></span>
+            Question <span id=questionNo></span>
         </h1>
             <div id="choices" class="flex-direction">
                 <h1><button class="ansBtn"><span id="choiceA">A</span></h3></button></h1>

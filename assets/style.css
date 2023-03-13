@@ -20,6 +20,13 @@ body{
 }
 .title{
     border-bottom: 1px solid lightgray;
+    color: #007bff;
+    font-size: 30px;
+}
+
+#sixety{
+    color: rgb(3, 28, 254);
+    
 }
 
 .info-box{
@@ -43,7 +50,7 @@ body{
 }
 .info-box .info-list .info{
     margin: 5px 0;
-    font-size: 17px;
+    font-size: 25px;
 }
 .info-box .info-list .info span{
     font-weight: 600;
@@ -56,7 +63,7 @@ body{
 }
 #start-btn{
     width: 50%;
-    background-color: var(--BLUE);
+    background-color: var(--offWHite);
     border-color: var(--offWHite);
     color: var(--white);
     font-weight: bolder;
@@ -80,7 +87,7 @@ body{
     height: 40px;
     width: 100px;
     border: 1px solid var(--BLUE);
-    background: var(--BLUE);
+    background: var(--offWHite);
     border-radius: 7px;
     color: var(--offWHite);
     font-size: 16px;
@@ -90,15 +97,15 @@ body{
 }
 .buttons button.quit{
     border-color: var(--BLUE);
-    background-color: var(--offWHite);
-    color: var(--BLUE);
+    background-color: var(--BLUE);
+    color: var(--offWHite);
 }
 .buttons button.restart{
     color: var(--offWHite);
     background: var(--BLUE);
 }
 .buttons button.quit:hover{
-    background: var(--BLUE);
+    background: var(--blue);
     color: var(--offWHite);
 }
 .buttons button.restart:hover{
@@ -115,9 +122,12 @@ body{
     border-radius: 50%;
 
 }
-#initials, #saveScore {
-    width: 100px;
-}
+
+.ansBtn:hover{
+    background-color: grey;
+    color: var(--offWHite);
+
+
 #response{
     height: 60px;
     display: flex;
