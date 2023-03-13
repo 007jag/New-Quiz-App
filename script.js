@@ -66,6 +66,24 @@ startBtn.addEventListener("click", () => {
 
 });
 
+// function myFunction() {
+//     // for( var i = 0; i<=37; i++){
+//     // console.log("Hello Bobby!" + i.toString(36));
+//     // }  
+//   var startCountdown = setInterval(countdown, 1000);  
+
+// var counter = 60
+// function countdown(){
+//     console.log(counter);
+//     counter--;
+//         if (counter === 0){
+//             //endGame()
+//             clearInterval(startCountdown)
+//         };
+// };
+
+// }
+
 
 
 
