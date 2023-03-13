@@ -120,13 +120,20 @@ body{
     width:50px;
     height: 50px;
     border-radius: 50%;
-
 }
 
 .ansBtn:hover{
     background-color: grey;
     color: var(--offWHite);
+}
 
+.buttons{
+    justify-content: center;
+}
+.buttons a {
+        color: rgb(247, 247, 250);
+        text-decoration: none;
+}
 
 #response{
     height: 60px;
