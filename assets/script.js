@@ -58,3 +58,36 @@ function showQuestions(index){
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
+
+//Show Next Question When Question is answered
+function optionSelected(answer){
+    if (queCount>=10){
+        return;
+    }
+    let userAns = answer.textContent;
+    let correctAns = questions[queCount].answer;
+    if(userAns == correctAns){
+        console.log("Answer is Correct");
+        const response = document.querySelector("#response");
+        response.innerHTML = '<div id="response"><span>Correct!</span></div>';
+        setTimeout(nextQuestion, 500)
+        score += 1
+
+    }else{
+        console.log("Answer is Wrong");
+        const response = document.querySelector("#response");
+        response.innerHTML = '<div id="response"><span>Wrong!</span></div>';
+        setTimeout(nextQuestion, 500)
+        counter -= 5
+    }
+}
+function nextQuestion(){
+    queCount++;
+    if(queCount == 10){
+        
+        quizEnd()
+    };
+    showQuestions(queCount);
+    const response = document.querySelector("#response");
+    response.innerHTML = '<div id="response"><span></span></div>';
+    }
