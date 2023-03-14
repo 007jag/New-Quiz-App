@@ -1,5 +1,14 @@
 ## Coding Quiz Challenge
 
+## screenshots 
+
+![Alt text](assets/images/Screenshot%202023-03-14%20165030.png)
+![Alt text](assets/images/Screenshot%202023-03-14%20165045.png)
+![Alt text](assets/images/Screenshot%202023-03-14%20165053.png)
+![Alt text](assets/images/Screenshot%202023-03-14%20165110.png)
+![Alt text](assets/images/Screenshot%202023-03-14%20165125.png)
+
+
 ## Features
  A responsive user interface that works well on desktop and mobile devices.
  A timed quiz that presents multiple-choice questions to the user and tracks their score.
