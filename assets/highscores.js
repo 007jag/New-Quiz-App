@@ -9,3 +9,6 @@ highScoresTag = highScoresTag.concat('</br><div id="high-scores">'+ highScoreDat
 
 highScoresText.innerHTML = highScoresTag;
 
+
+
+

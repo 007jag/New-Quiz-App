@@ -66,6 +66,7 @@ body{
 }
 #timeRem{
     margin-top: 5;
+    font-weight: bolder;
 }
 #start-btn{
     height: 30%;
@@ -81,6 +82,8 @@ body{
     background: var(--blue);
     color: var(--white);
 }
+
+
 .info-box .buttons{
     height: 60px;
     display: flex;
@@ -167,4 +170,9 @@ body{
 }
 #rules{
     color: #007bff;
+}
+
+#save-score{
+    color: var(--white);
+    background-color: #005bb6;
 }
