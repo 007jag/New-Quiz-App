@@ -15,13 +15,13 @@ var counter = 60;
 var score = 0;
 
 
-//If Continue Button Clicked
+//Continue Button Clicked
 continueBtn.onclick = ()=>{
     infoBox.classList.add("hide");
     startScreen.classList.remove("hide");
 };
 
-//If Start Button Clicked
+//Start Button Clicked
 startBtn.onclick = () => {
     function countdown(){
         counter--;
@@ -59,7 +59,7 @@ function showQuestions(index){
     }
 }
 
-//Show Next Question When Question is answered
+//Shows Next Question 
 function optionSelected(answer){
     if (queCount>=10){
         return;
@@ -99,4 +99,15 @@ function quizEnd(){
     const scoreText = document.querySelector(".score");
     let scoreTag = '<h3 class="score"> Your score was '+ score +' out of 10!</h3>';
     scoreText.innerHTML = scoreTag 
+}
+//save initials in local storage 
+submitBtn.onclick = () => {
+    let initials = initialsText.value;
+    var resultsDataObj = {
+        initials: initials,
+        score: score
+    }
+    localStorage.setItem(localStorage.length, JSON.stringify(resultsDataObj));
+    initialsText.value = ""
+    location.reload();
 }
