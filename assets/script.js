@@ -76,7 +76,7 @@ function optionSelected(answer){
     }else{
         console.log("Answer is Wrong");
         const response = document.querySelector("#response");
-        response.innerHTML = '<div id="response"><span>Wrong!</span></div>';
+        response.innerHTML = '<div id="response2"><span>Wrong!</span></div>';
         setTimeout(nextQuestion, 500)
         counter -= 5
     }
@@ -98,16 +98,15 @@ function quizEnd(){
     endBox.classList.remove("hide");
     const scoreText = document.querySelector(".score");
     let scoreTag = '<h3 class="score"> Your score was '+ score +' out of 10!</h3>';
-    scoreText.innerHTML = scoreTag 
-}
-//save initials in local storage 
+    scoreText.innerHTML = scoreTag; 
+} 
 submitBtn.onclick = () => {
     let initials = initialsText.value;
     var resultsDataObj = {
         initials: initials,
         score: score
     }
-    localStorage.setItem(localStorage.length, JSON.stringify(resultsDataObj));
+    localStorage.setItem((localStorage.length+1), JSON.stringify(resultsDataObj));
     initialsText.value = ""
     location.reload();
 }

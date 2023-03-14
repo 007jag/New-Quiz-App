@@ -23,12 +23,12 @@ body{
     color: #007bff;
     font-size: 30px;
 }
-
-#sixety{
-    color: rgb(3, 28, 254);
-    
+#title{
+    color: var(--blue);
 }
-
+#timer{
+    color: rgb(3, 28, 254);
+}
 .info-box{
     width: 540px;
     background: var(--offWHite);
@@ -56,29 +56,26 @@ body{
     font-weight: 600;
     color: lightskyblue;   
 }
-
 .quiz-box{
     width: 540px;
-    background: var(--offWHite);
+    background: var(--white);
     border-radius: 5px;
 }
 .que-text{
     border-top: 1px solid rgb(211, 211, 211);
 }
-
-
 #timeRem{
     margin-top: 5;
 }
-
 #start-btn{
-    width: 50%;
+    height: 30%;
+    width: 20%;
     background-color: var(--BLUE);
-    border-color: var(--offWHite);
-    color: var(--white);
-    font-weight: bolder;
-    letter-spacing: 2px;
-    border-radius: 10px;
+    border-color: grey;
+    color: var(--offWHite);
+    font-weight: bold;
+    letter-spacing: 5px;
+    border-radius: 20px;
 }
 #start-btn:hover{
     background: var(--blue);
@@ -125,20 +122,19 @@ body{
 .question {
     border-bottom: 1px solid lightgray;
 }
-
 .option {
     border: solid var(--blue);
-    margin: 5px;
-    background: var(--BLUE);
-    color: var(--white);
-    border-radius: 5px;
+    margin: 15px;
+    background: var(--offWHite);
+    color: var(black);
+    border-radius: 20px;
+    text-align: center;
+    font-size: larger;
 }
-
 .option:hover{
-    background: var(--blue);
+    background: var(--BLUE);
     cursor: pointer;
 }
-
 .buttons{
     justify-content: center;
 }
@@ -146,13 +142,18 @@ body{
         color: rgb(247, 247, 250);
         text-decoration: none;
 }
-
 #response{
-    height: 60px;
+    height: 50px;
     display: flex;
     align-items: center;
-    padding: o 35px;
-    border-top: 1px solid lightgray;
+    padding: o 50px;
+    color: #00ff55;
+    font-size: 35px;
+    justify-content: center;
+    /* border-top: 1px solid lightgray; */
+}
+#response2{
+    color: red;
 }
 #saveScore{
     border-color: var(--BLUE);
@@ -163,4 +164,7 @@ body{
 #saveScore:hover{
     background: var(--BLUE);
     color: var(--offWHite);
+}
+#rules{
+    color: #007bff;
 }

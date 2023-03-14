@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
-
 </head>
 <body>
 <header class=>
@@ -21,19 +20,19 @@
 </header>
 <main class="container position-relative">
     <div id="start" class="hide text-center">
-        <h1>JavaScript Quiz Game</h1>
+        <h1  id="title">JavaScript Quiz Game</h1>
         <button type="button" class="buttons mt-5" id="start-btn">Start!</button> 
     </div>
     <div id="rules" class="info-box mt-5" style="width: auto" >
         <div class="info-title">Quiz Rules</div>
         <div class="info-list">
-            <div class="info">1. You will only be given <span id="sixety">60s</span> to answer 10 questions.</div>
+            <div class="info">1. You will only be given <span id="timer">60s</span> to answer 10 questions.</div>
             <div class="info">2. You cant go back to prev questions</div>
-            <div class="info">3. Everytime you get a wrong answer 5 secounds will be deducted from the time.</div>
+            <div class="info">3. every wrong answer will automaticly deduct <span id="timer">5s</span></div>
         </div>
         <div class="buttons">
             <button class="quit btn btn-primary btn-sm"><a href="https://github.com/007jag/New-Code-Quiz" 
-                class="highscores float-end">Exit Quiz</a></button>
+                class="highscores float-center">Exit Quiz</a></button>
             <button class="restart btn btn-primary btn-sm">Continue</button>
         </div>
     </div>
